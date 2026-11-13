@@ -1,0 +1,22 @@
+Dear Editor-in-Chief,
+
+We are pleased to submit our manuscript entitled "Driver Vigilance Estimation From EEG and Forehead EOG Under Deployment Constraints: Real-Time Features, Unseen Subjects, and Interpretable Kolmogorov-Arnold Networks" for consideration as a regular paper in the IEEE Journal of Biomedical and Health Informatics.
+
+Physiological monitoring of driver vigilance has a deployment gap. A monitor must estimate vigilance in real time and for drivers it has never seen, yet results on the widely used SEED-VIG benchmark are often obtained with features smoothed over whole recording sessions, which use future samples, and with test windows from subjects who also appear in the training data. Our study measures how much each of these two conditions inflates the reported performance of identical models, and then develops and evaluates a pipeline in which both conditions are enforced.
+
+The main contributions are the following:
+- A controlled measurement of evaluation optimism on SEED-VIG: the same models are evaluated with session-smoothed and causal features under random-window, within-session, and leave-one-subject-out protocols, which separates the effect of non-causal features from that of subject overlap.
+- A strictly real-time processing pipeline from the raw recordings: all filters are causal, and every session-level parameter (bad channels, the ocular-artifact model, and the EOG thresholds) is estimated from an unlabeled two-minute warm-up. Compared with processing whole sessions, it lowers the correlation by at most 0.03, not significantly.
+- A leave-one-subject-out comparison of LSTM, CNN-LSTM, and B-spline Kolmogorov-Arnold network (KAN) models with paired statistical tests across 21 subjects: on 19 compact features, the KAN reaches the lowest error of all models and matches the LSTM with 25 times fewer parameters, and it significantly outperforms the raw-signal CNN-LSTMs.
+- An interpretation of the learned KAN functions, which recovers established physiology, including a threshold-like increase of drowsiness with slow eye movements, so that a developer or clinician can check what the model responds to before deployment.
+
+We believe the manuscript fits the scope of the journal: it concerns the analysis of physiological signals (EEG and EOG) for health and safety monitoring, emphasizes interpretability and reproducible evaluation, and yields a lightweight model that needs no labeled calibration data and is small enough for wearable and embedded hardware.
+
+We confirm that this manuscript is original, has not been published previously, and is not under consideration for publication elsewhere. All authors have approved the manuscript and agree with its submission. The authors received no funding for this work and declare no competing interests. The study uses the SEED-VIG dataset, obtained under the license agreement of Shanghai Jiao Tong University, and the complete code is publicly available at https://github.com/Helloworldceo/Alain_DDD-dataset.
+
+Thank you for considering our manuscript. We look forward to your response.
+
+Sincerely,
+
+Shyaka Alain Christian (corresponding author)
+on behalf of all authors: Shyaka Alain Christian, Zhe Chen, and Dawit Abdisa Jebessa

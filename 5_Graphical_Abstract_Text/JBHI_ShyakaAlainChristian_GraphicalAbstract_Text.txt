@@ -1,0 +1,1 @@
+Common evaluation shortcuts inflate EEG/EOG vigilance-estimation accuracy. Under strictly real-time processing and testing on unseen drivers, a 1,600-parameter Kolmogorov-Arnold network on 19 physiological features achieves the lowest error (RMSE 0.169) without labeled calibration, and its learned functions can be inspected.

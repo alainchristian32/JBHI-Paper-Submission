@@ -1,0 +1,7 @@
+Statement on previously published work
+
+Related earlier publication by the same authors:
+S. A. Christian, Z. Chen, and D. A. Jebessa, "Driver drowsiness detection using support vector machine (SVM) model from brain alpha wave and GUI implementation," in Proc. 5th Int. Conf. Computers and Artificial Intelligence Technology (CAIT), Hangzhou, China, 2024, pp. 59-64, doi: 10.1109/CAIT64506.2024.10963136.
+
+How the present manuscript differs:
+The earlier conference paper detected driver drowsiness with a support vector machine on occipital alpha-band EEG features and integrated it into a graphical interface. The present manuscript addresses a different problem: continuous vigilance estimation from EEG and forehead EOG for drivers not seen during training, under strictly real-time processing. Its methods, experiments, and results are new: a causal preprocessing pipeline whose session-level parameters are estimated from an unlabeled two-minute warm-up, a controlled measurement of how evaluation protocols and session-smoothed features inflate reported performance on SEED-VIG, a leave-one-subject-out comparison of LSTM, CNN-LSTM, and Kolmogorov-Arnold network models with paired statistical tests, and an interpretation of the learned Kolmogorov-Arnold functions. No text, figures, or results are reused from the earlier paper. It is cited in the manuscript as prior work, and an SVM is included only as a reference model.
